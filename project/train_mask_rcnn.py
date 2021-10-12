@@ -43,7 +43,7 @@ class CustomConfig(Config):
     def __init__(self, num_classes):
 
         if num_classes > 1:
-            raise ValueError("{} classes were found. This is a DEMO version, and it only supports 1 class. Get the PRO version to"
+            raise ValueError("{} classes were found."
                   " continue the training.".format(num_classes))
 
         self.NUM_CLASSES = num_classes + 1
